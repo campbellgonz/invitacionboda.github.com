@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('imagenes/casita-pajaros-ramas-flores-mesa-madera-copyspace.jpg'); /* Ruta de tu imagen */
+            background-size: cover; 
+            background-position: center; 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Libre Baskerville', serif; 
+            text-align: center; 
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); 
+            margin: 20px auto; 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 90%; 
+            max-width: 600px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+        h1, h2 {
+            font-family: 'Great Vibes', cursive; 
+            color: #5D4D4D; 
+        }
+        .countdown {
+            font-size: 2em; 
+            color: #928387;
+            margin: 20px 0;
+            display: flex; 
+            justify-content: center;
+            align-items: baseline; 
+        }
+        .countdown div {
+            margin: 0 10px;
+        }
+        .countdown-label {
+            font-size: 0.5em; 
+            color: #333; 
+        }
+        .audio-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        audio {
+            width: 80%;
+        }
+        .section {
+            margin: 20px 0; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 10px; 
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .location {
+            font-size: 1.2em; 
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block; 
+            margin: 10px 5px; 
+            padding: 10px 20px; 
+            background-color: #5D4D4D; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #928387;
+        }
+        .parents {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-top: 10px; 
+        }
+        .parents-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: flex-start; 
+            margin: 10px 0;
+            text-align: left;
+        }
+        .padrinos-container {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .parent-section {
+            width: 30%;
+            text-align: center;
+        }
+        .image-container {
+            display: flex; 
+            justify-content: center; 
+            margin: 20px 0; 
+        }
+        .image-container img {
+            width: 80px;
+            margin: 0 10px; 
+        }
+        .wedding-title, .communion-title {
+            font-size: 3em; 
+            color: #5D4D4D; 
+            margin: 10px 0; 
+        }
+        .wedding-phrase, .communion-phrase {
+            font-size: 1em; 
+            color: #333; 
+            margin-bottom: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Invitación de Boda y Primera Comunión</h1>
+        
+        <div class="countdown" id="countdown">
+            <div>
+                <div id="days">99</div>
+                <div class="countdown-label">Días</div>
+            </div>
+            <div>
+                <div id="hours">10</div>
+                <div class="countdown-label">Horas</div>
+            </div>
+            <div>
+                <div id="minutes">30</div>
+                <div class="countdown-label">Minutos</div>
+            </div>
+            <div>
+                <div id="seconds">5</div>
+                <div class="countdown-label">Segundos</div>
+            </div>
+        </div>
+
+            <!-- Contenedor de audio -->
+            <div class="audio-container">
+                <audio controls>
+                    <source src="Aleluya.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </div>
+
+
+        <div class="section">
+            <h2 class="wedding-title">Mi Boda Pamela y Gustavo</h2>
+            <div class="wedding-phrase">El amor es la unión de dos corazones.</div>
+            <div class="parents-container">
+                <div class="parent-section">
+                    <p><strong>Padres de la Novia:</strong></p>
+                    <p>[Nombres]</p>
+                </div>
+                <div class="parent-section">
+                    <p><strong>Padrinos de Velación:</strong></p>
+                    <p>[Nombres]</p>
+                </div>
+                <div class="parent-section">
+                    <p><strong>Padres del Novio:</strong></p>
+                    <p>[Nombres]</p>
+                </div>
+            </div>
+            <div class="location">
+                <p><strong>Hora de la misa:</strong> 4:00 PM</p>
+                <p><strong>Ubicación de la misa:</strong> Iglesia Santiago Apostol</p>
+                <p><strong>Hora de la fiesta:</strong> 6:00 PM</p>
+                <p><strong>Ubicación de la fiesta:</strong> Salon Jardín De Evento ESOR JM</p>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\pngwing.com.png" alt="Anillo de Boda">
+                <img src="imagenes/eucaristia.png" alt="Eucaristía">
+            </div>
+            <a href="https://wa.link/wffi3o" class="button">Confirmar Asistencia</a>
+            <a href="https://maps.app.goo.gl/bH2n1LBy6tLdFVoo9" class="button">Ubicación de la Fiesta</a>
+            <a href="https://maps.app.goo.gl/2ktEMR9ZHEmQDYin6" class="button">Ubicación de la Misa</a>
+        </div>
+
+        <div class="section">
+            <h2 class="communion-title">Mi Primera Comunión Valentina, Renata y Santiago</h2>
+            <div class="communion-phrase">La primera comunión es un regalo de amor.</div>
+            <div class="parents-container">
+                <div>
+                    <p><strong>Mis Padres:</strong> [Nombres]</p>
+                </div>
+            </div>
+            <div class="padrinos-container">
+                <p><strong>Padrinos de Valentina:</strong> [Nombre 1], [Nombre 2]</p>
+                <p><strong>Padrinos de Renata:</strong> [Nombre 3], [Nombre 4]</p>
+                <p><strong>Padrinos de Santiago:</strong> [Nombre 5], [Nombre 6]</p>
+            </div>
+            <div class="location">
+                <p><strong>Hora de la misa:</strong> 11:00 AM</p>
+                <p><strong>Ubicación de la misa:</strong> Iglesia Santiago Apostol</p>
+            </div>
+            <div class="image-container">
+                <img src="imagenes\pngwing.com.png" alt="Anillo de Boda">
+                <img src="imagenes/eucaristia.png" alt="Eucaristía">
+            </div>
+            <a href="https://wa.link/wffi3o" class="button">Confirmar Asistencia</a>
+            <a href="https://maps.app.goo.gl/bH2n1LBy6tLdFVoo9" class="button">Ubicación de la Fiesta</a>
+            <a href="https://maps.app.goo.gl/2ktEMR9ZHEmQDYin6" class="button">Ubicación de la Misa</a>
+        </div>
+    </div>
+
+    <script>
+        const eventDate = new Date("January 18, 2025 00:00:00").getTime();
+        const countdownElement = document.getElementById("countdown");
+
+        setInterval(() => {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+        }, 1000);
+    </script>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
